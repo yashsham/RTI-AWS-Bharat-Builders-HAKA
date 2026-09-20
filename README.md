@@ -25,25 +25,25 @@ A citizen describes their problem in everyday language (e.g., *"The road outside
 
 ```mermaid
 graph TD
-    User["Citizen (Browser UI)"] -->|POST /api/rti/draft (SSE)| Backend["FastAPI Backend (Port 8000)"]
-    Backend -->|run_rti_agent()| Agent["Strands AI Agent"]
+    User["Citizen (Browser UI)"] -->|"POST /api/rti/draft (SSE)"| Backend["FastAPI Backend (Port 8000)"]
+    Backend -->|"run_rti_agent()"| Agent["Strands AI Agent"]
     
     subgraph Agentic Tool Execution
-        Agent -->|1. find_authority| AuthTool["find_authority Tool"]
-        Agent -->|2. lookup_rti_provision| ProvisionTool["lookup_rti_provision Tool"]
-        Agent -->|3. draft_application| DraftTool["draft_application Tool"]
+        Agent -->|"1. find_authority"| AuthTool["find_authority Tool"]
+        Agent -->|"2. lookup_rti_provision"| ProvisionTool["lookup_rti_provision Tool"]
+        Agent -->|"3. draft_application"| DraftTool["draft_application Tool"]
         
         AuthTool --> AuthoritiesDB[("authorities.json (30+ mappings)")]
         ProvisionTool --> ActDB[("rti_act_2005.json (Verbatim Act Text)")]
     end
     
-    Agent -->|Yield Stream Events| Backend
-    Backend -->|SSE Stream: step, token, result| User
+    Agent -->|"Yield Stream Events"| Backend
+    Backend -->|"SSE Stream: step, token, result"| User
     
     subgraph UI Presentation Layer
-        User -->|1. Live Render| LiveTimeline["Live Step Timeline"]
-        User -->|2. Formatted Render| LetterCard["Formal RTI Letter Preview"]
-        User -->|3. Click § Citation| CitationSheet["Verbatim Clause Side Sheet"]
+        User -->|"1. Live Render"| LiveTimeline["Live Step Timeline"]
+        User -->|"2. Formatted Render"| LetterCard["Formal RTI Letter Preview"]
+        User -->|"3. Click Section Citation"| CitationSheet["Verbatim Clause Side Sheet"]
     end
 ```
 
