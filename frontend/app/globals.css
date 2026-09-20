@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-paper: #FAF7F2;
+    --text-ink: #14161A;
+    --text-muted: #6B6F76;
+    --border-paper: #E6E1D8;
+    --accent-indigo: #1F2A5C;
+    --accent-saffron: #E8871E;
+    --accent-green: #2F7D5B;
+    --card-paper: #FFFFFF;
+    --card-border: #E8E3DA;
+    --mono-bg: #F4F0E8;
+  }
+
+  .dark {
+    --bg-paper: #0E1014;
+    --text-ink: #F2EFE9;
+    --text-muted: #9E9AA2;
+    --border-paper: #282C35;
+    --accent-indigo: #6B7BFF;
+    --accent-saffron: #F59A2B;
+    --accent-green: #4ADE80;
+    --card-paper: #161920;
+    --card-border: #242933;
+    --mono-bg: #1C202B;
+  }
+
+  body {
+    background-color: var(--bg-paper);
+    color: var(--text-ink);
+    font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.2);
+  border-radius: 9999px;
+}
+
+/* Print CSS */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .rti-printable-letter,
+  .rti-printable-letter * {
+    visibility: visible;
+  }
+  .rti-printable-letter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt;
+    line-height: 1.6;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

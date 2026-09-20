@@ -42,6 +42,7 @@ def lookup_rti_provision(query: str, section: Optional[str] = None) -> List[Dict
         for item in clauses:
             if item.get("section", "").lower() == clean_sec or item.get("id", "").lower() == f"s{clean_sec}":
                 results.append(item)
+        return results
 
     if not results:
         query_words = set(query.lower().split())
