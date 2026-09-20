@@ -8,25 +8,25 @@ RTIKit is an intelligent, verified Right to Information (RTI) assistant designed
 
 ```mermaid
 graph TD
-    User["Citizen (Browser UI)"] -->|POST /api/rti/draft (SSE)| Backend["FastAPI Backend (Port 8000)"]
-    Backend -->|run_rti_agent()| Agent["Strands AI Agent"]
+    User["Citizen (Browser UI)"] -->|"POST /api/rti/draft (SSE)"| Backend["FastAPI Backend (Port 8000)"]
+    Backend -->|"run_rti_agent()"| Agent["Strands AI Agent"]
     
     subgraph Agentic Execution Layer
-        Agent -->|1. find_authority| AuthTool["find_authority Tool"]
-        Agent -->|2. lookup_rti_provision| ProvisionTool["lookup_rti_provision Tool"]
-        Agent -->|3. draft_application| DraftTool["draft_application Tool"]
+        Agent -->|"1. find_authority"| AuthTool["find_authority Tool"]
+        Agent -->|"2. lookup_rti_provision"| ProvisionTool["lookup_rti_provision Tool"]
+        Agent -->|"3. draft_application"| DraftTool["draft_application Tool"]
         
         AuthTool --> AuthoritiesDB[("authorities.json (30+ mappings)")]
         ProvisionTool --> ActDB[("rti_act_2005.json (Verbatim Act Text)")]
     end
     
-    Agent -->|Yield Stream Events| Backend
-    Backend -->|SSE Stream: step, token, result| User
+    Agent -->|"Yield Stream Events"| Backend
+    Backend -->|"SSE Stream: step, token, result"| User
     
     subgraph UI Render Layer
-        User -->|1. Render| LiveTimeline["Live Step Timeline"]
-        User -->|2. Render| LetterCard["Formal RTI Letter Preview"]
-        User -->|3. Click § Citation| CitationSheet["Verbatim Clause Side Sheet"]
+        User -->|"1. Render"| LiveTimeline["Live Step Timeline"]
+        User -->|"2. Render"| LetterCard["Formal RTI Letter Preview"]
+        User -->|"3. Click Section Citation"| CitationSheet["Verbatim Clause Side Sheet"]
     end
 ```
 
