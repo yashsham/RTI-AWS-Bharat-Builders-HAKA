@@ -1,0 +1,32 @@
+[
+  {
+    "id": "q1_road_repair",
+    "query": "The road outside my house was repaired last year but the pothole is back. Who approved the work, and what was the budget?",
+    "expected_authority": "Municipal Corporation / Public Works Department (PWD)",
+    "expected_suitable": true
+  },
+  {
+    "id": "q2_scholarship_delay",
+    "query": "My college scholarship application has been pending for 8 months without any reason given. Why?",
+    "expected_authority": "Department of Social Justice & Empowerment / Higher Education Department",
+    "expected_suitable": true
+  },
+  {
+    "id": "q3_ration_card",
+    "query": "The local fair price ration shop owner is denying grain allocation claiming stock is empty for the third month.",
+    "expected_authority": "Department of Food, Civil Supplies & Consumer Affairs",
+    "expected_suitable": true
+  },
+  {
+    "id": "q4_police_fir",
+    "query": "I filed a complaint at the local police station 3 weeks ago regarding theft, but no update or FIR copy has been given.",
+    "expected_authority": "District Police Headquarters / Office of the Superintendent of Police (SP) / Commissioner of Police",
+    "expected_suitable": true
+  },
+  {
+    "id": "q5_hospital_records",
+    "query": "The government primary health centre in my village has no doctor for 6 months and medicine stock registers are hidden.",
+    "expected_authority": "District Chief Medical Officer (CMO) / Directorate of Health Services",
+    "expected_suitable": true
+  }
+]

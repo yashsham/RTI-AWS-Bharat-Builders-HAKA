@@ -1,0 +1,110 @@
+[
+  {
+    "topics": ["road", "pothole", "street", "drain", "sewer", "asphalt", "flyover", "bridge", "contractor", "pwd"],
+    "authority_type": "Municipal Corporation / Public Works Department (PWD)",
+    "typical_department": "Engineering / Roads & Infrastructure",
+    "notes": "Varies by jurisdiction. In urban areas, municipal corporations handle local roads; state highways are under state PWD."
+  },
+  {
+    "topics": ["scholarship", "college fee", "education grant", "student aid", "fellowship", "tuition", "school funds"],
+    "authority_type": "Department of Social Justice & Empowerment / Higher Education Department",
+    "typical_department": "Scholarships & Financial Assistance Wing",
+    "notes": "Specify scheme name, application reference ID, and year of applying."
+  },
+  {
+    "topics": ["police", "fir", "investigation", "complaint status", "charge sheet", "station house officer", "sho"],
+    "authority_type": "District Police Headquarters / Office of the Superintendent of Police (SP) / Commissioner of Police",
+    "typical_department": "RTI & Legal Cell / Crime Records Bureau",
+    "notes": "Pending investigation documents may be restricted under Section 8(1)(h), but status of FIR and copy of FIR are disclosable."
+  },
+  {
+    "topics": ["hospital", "medical records", "doctor vacancy", "medicine stock", "primary health centre", "phc", "government hospital"],
+    "authority_type": "District Chief Medical Officer (CMO) / Directorate of Health Services",
+    "typical_department": "Hospital Administration & Public Health",
+    "notes": "Personal medical records of third parties are exempt under Section 8(1)(j), but citizen's own medical records or hospital stock details are disclosable."
+  },
+  {
+    "topics": ["water supply", "pipeline", "water meter", "sewerage", "water contamination", "jal board", "water connection"],
+    "authority_type": "State Water Supply & Sewerage Board / Municipal Water Department",
+    "typical_department": "Water Works & Public Health Engineering",
+    "notes": "Reference consumer number, connection location, and date of application."
+  },
+  {
+    "topics": ["electricity", "power cut", "transformer", "electricity bill", "meter reading", "discom", "power grid"],
+    "authority_type": "State Electricity Distribution Company (DISCOM) / Electricity Department",
+    "typical_department": "Commercial & Technical Wing / Consumer Grievance Cell",
+    "notes": "State DISCOMs owned by government are public authorities under Sec 2(h)."
+  },
+  {
+    "topics": ["ration", "ration card", "pds", "fair price shop", "grain allocation", "food security", "bpl card"],
+    "authority_type": "Department of Food, Civil Supplies & Consumer Affairs",
+    "typical_department": "Public Distribution System (PDS) & Rationing Wing",
+    "notes": "Inspections of stock registers and sale registers at ration shops can be requested under RTI."
+  },
+  {
+    "topics": ["transport", "rto", "driving licence", "vehicle registration", "rc transfer", "permit", "bus service"],
+    "authority_type": "Regional Transport Office (RTO) / Transport Department",
+    "typical_department": "Licensing & Vehicle Registration Bureau",
+    "notes": "Specify application token number, date of test, or vehicle registration number."
+  },
+  {
+    "topics": ["pension", "old age pension", "widow pension", "disability pension", "epfo", "provident fund"],
+    "authority_type": "Social Welfare Department / Employees' Provident Fund Organisation (EPFO)",
+    "typical_department": "Pension Disbursing Wing",
+    "notes": "Quote PPO number or Provident Fund Account number for exact tracking."
+  },
+  {
+    "topics": ["land", "patta", "khata", "encroachment", "revenue record", "mutation", "survey number", "tehsildar"],
+    "authority_type": "District Revenue Department / Office of the Tehsildar / Collectorate",
+    "typical_department": "Land Records & Revenue Wing",
+    "notes": "Provide exact village name, survey number, and sub-division details."
+  },
+  {
+    "topics": ["sanitation", "garbage", "trash collection", "dump yard", "cleaning", "hygiene"],
+    "authority_type": "Municipal Corporation / Town Panchayat",
+    "typical_department": "Health & Solid Waste Management",
+    "notes": "Request copy of sanitation schedule and contractor payment vouchers."
+  },
+  {
+    "topics": ["forest", "tree cutting", "wildlife", "forest land", "environment clearance"],
+    "authority_type": "State Forest Department / Principal Chief Conservator of Forests",
+    "typical_department": "Forest Conservation & Environmental Impact",
+    "notes": "Specify forest range and permission letters if applicable."
+  },
+  {
+    "topics": ["employment", "job notification", "recruitment", "selection list", "answer key", "marksheet", "ssc", "upsc"],
+    "authority_type": "Staff Selection Commission (SSC) / State Public Service Commission / University",
+    "typical_department": "Examination & Recruitment Controller",
+    "notes": "Candidates have right to inspect copy of answer key/evaluated sheets per Supreme Court rulings."
+  },
+  {
+    "topics": ["housing", "pmay", "pradhan mantri awas yojna", "allotment", "slum rehabilitation", "housing board"],
+    "authority_type": "State Housing Board / Urban Development Authority",
+    "typical_department": "Housing Allotment & Welfare",
+    "notes": "Provide application number and beneficiary list year."
+  },
+  {
+    "topics": ["income tax", "pan card", "tax refund", "tds", "it return"],
+    "authority_type": "Income Tax Department / Central Board of Direct Taxes (CBDT)",
+    "typical_department": "Office of the Assessing Officer (IT Officer)",
+    "notes": "Status of applicant's own refund is disclosable; third party tax details exempt under Sec 8(1)(j)."
+  },
+  {
+    "topics": ["passport", "passport status", "police verification for passport"],
+    "authority_type": "Regional Passport Office (RPO) / Ministry of External Affairs",
+    "typical_department": "Passport Application Processing Division",
+    "notes": "Quote File Reference Number (ARN)."
+  },
+  {
+    "topics": ["railway", "train status", "ticket refund", "irctc", "station facility"],
+    "authority_type": "Indian Railways / Divisional Railway Manager (DRM) Office",
+    "typical_department": "Commercial & Passenger Amenities Wing",
+    "notes": "Specify railway zone and division."
+  },
+  {
+    "topics": ["bank", "public sector bank", "sbi", "loan subsidy", "pnb", "rbi"],
+    "authority_type": "Public Sector Bank / Reserve Bank of India",
+    "typical_department": "RTI & Consumer Affairs Cell",
+    "notes": "Public sector banks fall under Sec 2(h); private banks are not directly covered unless accessed via RBI."
+  }
+]
